@@ -48,5 +48,4 @@ xterm*decTerminalID: vt340
 ! white
 *.color7:       #F2F1F0
 *.color15:      #F2F1F0
-!--------------------xdefauls
-!xterm*faceSize: 15
+
