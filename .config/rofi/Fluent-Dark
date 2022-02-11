@@ -1,0 +1,97 @@
+configuration {
+	font				: "Roboto Mono 12";
+	fixed-num-lines			: true;
+	show-icons			: false;
+	sidebar-mode			: true;
+	scroll-method			: 1;
+	click-to-exit			: true;
+	combi-hide-mode-prefix		: false;
+	display-drun			: "";
+	sidebar-mode			: false;
+	disable-history			: true;
+}
+
+* {
+	background-color		: #1C1C1C;
+	foreground-color		: #C1C1C1;
+}
+
+window {
+	border				: 0px;
+	border-color			: @background-color;
+	border-radius			: 4px;
+	padding				: 20;
+	width				: 30%;
+	height				: 45%;
+	background-color		: @background-color;
+	foreground-color		: @foreground-color;
+}
+
+prompt {
+	enabled				: false;
+	border				: 5px;
+	border-color			: @background-color;
+	spacing				: 4;
+	text-color			: @foreground-color;
+}
+
+textbox-prompt-colon{
+	expand				: true;
+	str				: "Application";
+	margin				: 0px 4px 0px 0px;
+	text-color			: @foreground-color;
+}
+
+entry {
+	border				: 5px 0px 0px 0px;
+	border-color			: @background-color;
+	spacing				: 2;
+	text-color			: @foreground-color;
+	blink				: true;
+}
+
+inputbar {
+	children			: [prompt, entry];
+	background-color		: @background-color;
+	text-color			: @foreground-color;
+	expand				: false;
+	padding				: 1.5%;
+}
+
+listview {
+	background-color 		: @background-color;
+	text-color			: @foreground-color;
+	lines 				: 8;
+	columns				: 2;
+	fixed-height			: 0;
+	spacing				: 5px;
+	border				: 3px;
+	dynamic				: true;
+	layout				: vertical;
+	cycle				: false;
+}
+
+element-text {
+	background-color		: #00000000;
+	text-color			: @foreground-color;
+	expand				: true;
+	/* horizontal-align		: 0.5; */
+	/* vertical-align		: 0.5; */
+	margin				: 0.5%;	
+}
+
+element selected {
+	background-color		: #404040;
+	text-color			: @foreground-color;
+	margin				: 0.3%;	
+	border				: 0% 0% 0% 0%;
+	border-color			: @foreground-color;
+}
+
+button {
+	horizontal-align		: 0;
+	vertical-align			: 0;
+	background-color		: @background-color;
+	text-color			: @background-color;
+	border				: 0px;
+}
