@@ -1,16 +1,21 @@
-*internalBorder: 12
+xterm*internalBorder: 14
 xterm*termName: xterm-256color
-XTerm*locale: true
-xterm*faceName: RobotoMono:size=12
+xterm*locale: false
+xterm*utf8 : true
+xterm*metaSendsEscape: true
+
+xterm*faceName: RobotoMono Nerd Font Mono:size=12
+!xterm*faceName: JetBrains Mono:size=12
+
 xterm*decTerminalID: vt340
-*underlineURLs: true
-*urlLauncher: xdg-open
-*url-select.button: 1
-*urgentOnBell: true
-*geometry: 100x22
-*scrollstyle: plain
-*pointerBlank: true
-*scrollBar: false
+xterm*underlineURLs: true
+xterm*urlLauncher: xdg-open
+xterm*url-select.button: 1
+xterm*urgentOnBell: true
+xterm*geometry: 100x22
+xterm*scrollstyle: plain
+xterm*pointerBlank: true
+xterm*scrollBar: false
 
 ! special
 *.foreground:   #F2F1F0
